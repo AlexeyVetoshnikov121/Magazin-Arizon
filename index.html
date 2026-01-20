@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arizon</title>
+
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body>
+
+    <header class="section__header">
+        <div class="header section">
+            <div class="block-u">
+                <a href="" class="header__image-link">
+                    <img src="./icons/amogus.svg" alt="" class="header__icon">
+                </a>
+                <h1 class="header__title-ru">Average rate:</h1>
+                <h1 class="header__title-sr-znach">0</h1>
+            </div>
+            <ul class="header__list pos hidden-mobile">
+                <li class="header__list-item">
+                    <a href="" class="header__list-title star">Primary</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./pages/winter.html" class="header__list-title">Winter</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./pages/spring.html" class="header__list-title">Spring</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./pages/summer.html" class="header__list-title">Summer</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./pages/autumn.html" class="header__list-title">Autumn</a>
+                </li>
+            </ul>
+            <nav class="header__block">
+                <label for="theme-selector" class="header__label">
+                    <span class="header__arrow"></span>
+                    <select name="theme-filter" id="theme-selector" class="header__theme">
+                        <option value="default" selected disabled>Default</option>
+                        <option value="black">Black</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                    </select>
+                </label>
+                <!-- <button class="header__corsin-button" type="button" onclick="MobileCorsin.showModal()">
+                    <img src="./icons/cart.svg" alt="" class="header__corsin-image">
+                    <span class="header__corsin-span">0</span>
+                </button> -->
+                <button class="header__burger-button burger-button visible-mobile" type="button" onclick="MobileOverlay.showModal()">
+                    <span class="burger-button__span"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section__main">
+        <section class="section__store section">
+            <h1 class="visually-hidden">Online Store Banner</h1>
+            <div class="store">
+                <div class="store__block">
+                    <h2 class="store__title">Internet store<br><time>Arizon</time></h2>
+                    <div class="store__sub-title">
+                        <p>
+                            Minimalism of lines, high-quality materials, versatile silhouettes. Our collections are about conscious choice and timeless style.
+                        </p>
+                    </div>
+                    <a href="./pages/winter.html" class="store__link">
+                        <button class="store__button button" type="button">
+                            View More
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__feature">
+            <div class="feature section">
+                <h1 class="feature__title">Our Feature</h1>
+                <div class="feature__blocks">
+                    <div class="feature__block">
+                        <img src="./icons/Feature/uni-item.svg" alt="" class="feature__image">
+                        <h3 class="feature__block-title">Uniqueness</h2>
+                        <div class="feature__block-sub-title">
+                            <p>
+                                We select items that don't go out of fashion season after season. Our range is an investment in a wardrobe that will last for years. No fleeting trends: just versatile silhouettes and timeless solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <img src="./icons/Feature/work.svg" alt="" class="feature__image">
+                        <h3 class="feature__block-title">Feedback</h3>
+                        <div class="feature__block-sub-title">
+                            <p>
+                                We respond to inquiries within 2-4 hours during business hours. No weeks of waiting: your question or wish will not be ignored. Each request is handled by a live person, not a bot. We do not use template answers — we delve into the essence of the problem and offer an individual solution.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <img src="./icons/Feature/security.svg" alt="" class="feature__image">
+                        <h3 class="feature__block-title">Security</h3>
+                        <div class="feature__block-sub-title">
+                            <p>
+                               Buy only through our-arizon.ru or our proprietary application (links are in social networks). Check the address in the browser bar: any deviations are a danger signal. We never ask you to transfer money to an individual's account — only through official channels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__block">
+                        <img src="./icons/Feature/cool-otz.svg" alt="" class="feature__image">
+                        <h3 class="feature__block-title">Good reviews</h3>
+                        <div class="feature__block-sub-title">
+                            <p>
+                                At the Arizona store, we especially value the feedback from our customers, because this is a sincere response from those who have already appreciated our service and products. Customers often note that things fully match the photos and descriptions on the website: the cut fits perfectly, the materials are pleasing in quality, and the color turns out to be exactly as expected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section__location">
+            <div class="location section">
+                <h1 class="location__title">Locations</h1>
+                <nav class="location__stars">
+                    <div class="location__star">
+                        <h2 class="location__star-title">
+                            Tyumen
+                        </h2> 
+                    </div>
+                    <div class="location__star">
+                       <h2 class="location__star-title">
+                            Ekaterinburg
+                       </h2> 
+                    </div>
+                    <div class="location__star">
+                        <h2 class="location__star-title">Moscow</h2> 
+                    </div>
+                </nav>
+                <div class="location__sub-title">
+                    <p>
+                        In Moscow, we are located in a busy business district with excellent transport accessibility: near metro stations, public transport stops and convenient access roads. In Yekaterinburg, our store is located within walking distance from the main city arteries: you can easily get there both by private car (with comfortable parking) and by public transport.In Tyumen, we have taken our place in a modern shopping complex with a well-thought-out infrastructure: spacious halls, comfortable fitting rooms, a recreation area and clear navigation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__form">
+            <div class="form section">
+                <h1 class="visually-hidden">Form enter email</h1>
+                <form class="form__block">
+                    <h2 class="form__title">Leave your email address</h2>
+                    <div class="form__sub-title">
+                        <p>
+                            You will be the first to learn about new collections, exclusive offers and closed sales, get access to personal discounts and do not miss items from your favorite assortment.
+                        </p>
+                    </div>
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" class="form__input" id="email" name="email"
+                    placeholder="Enter your email..." required>
+                    <button class="form__button button" type="submit">
+                        send a message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section__footer section">
+        <div class="footer">
+            <h1 class="visually-hidden">Footer Arizona</h1>
+            <a href="" class="footer__image-link">
+                <img src="./icons/amogus.svg" alt="" class="header__icon">
+            </a>
+            <nav class="footer__titles">
+                <a href="" class="footer__title">primary</a>
+                <a href="pages/winter.html" class="footer__title">winter</a>
+                <a href="./pages/spring.html" class="footer__title">spring</a>
+                <a href="./pages/summer.html" class="footer__title">summer</a>
+                <a href="./pages/autumn.html" class="footer__title">autumn</a>
+            </nav>
+            <ul class="footer__contacts">
+                <li class="footer__item">
+                    <a href="mailto:alexveto2728@gmail.com" class="footer__email">alexveto2728@gmail.com</a>
+                </li>
+                <li class="footer__item">
+                    <a href="tel:+79822084258" class="footer__tel">+7 982 208 4258</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__sub-title">
+                <p>
+                    Created by Alexey Vetoshnikov :-)
+                </p>
+        </div>
+    </footer>
+
+    <dialog class="mobileOverlay visible-mobile" id="MobileOverlay">
+        <form class="mobileOverlay__form" method="dialog">
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <ul class="header__list">
+            <li class="header__list-item">
+                <a href="" class="header__list-title star">Primary</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./pages/winter.html" class="header__list-title">Winter</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./pages/spring.html" class="header__list-title">Spring</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./pages/summer.html" class="header__list-title">Summer</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./pages/autumn.html" class="header__list-title">Autumn</a>
+            </li>
+        </ul>
+    </dialog>
+
+    <dialog class="mobileCorsin" id="MobileCorsin">
+        <form class="mobileOverlay__form" method="dialog">
+            <h1 class="mobileOverlay__title">Your shopping cart is empty</h1>
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <div class="mobileCorsin__block-two">
+            <div class="mobileCorsin__block">
+                <dialog class="Basket" id="BasketCart">
+                <nav class="Basket__block">
+                    <img src="./images/Winter/jackets/1.png" alt="" class="Basket__image"> <!--Тут будет лежать src по JS пока такая картинка-->
+                    <div class="Basket__titles">
+                        <div class="Basket__top">
+                            <div class="Basket__top-item">
+                                <h1 class="Basket__title">Название</h1>
+                                <nav class="Basket__mini-block-titles">
+                                    <h2 class="Basket__price">4900 rub.</h2>
+                                    <h3 class="Basket__rating star">4.8</h3>
+                                </nav>
+                                <h1 class="Basket__size">Size: XXL</h1>
+                            </div> 
+                            <div class="Basket__top-item">
+                                <details class="mobileCart__details">
+                                <summary class="mobileCart__summary">
+                                    <h2 class="mobileCart__summary-title">Read more</h2>
+                                    <span class="mobileCart__open-window"></span>
+                                </summary>
+                                <div class="mobileCart__sub-title">
+                                    <p>
+                                        This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                                    </p>
+                                </div>
+                                </details> 
+                            </div> 
+                        </div>
+                        <div class="Basket__bottom">
+                            <button class="Basket__button-buy button" type="button">
+                                Buy
+                            </button>
+                            <form class="Basket__form-button" method="dialog">
+                                <button class="Basket__button-delete button" type="submit">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                </dialog>
+                <div class="Basket__enter">
+                    <h1 class="Basket__enter-title">Number of products: 0</h1>
+                    <h1 class="Basket__enter-price">Total price: 0</h1>
+                    <div class="Basket__enter-block-button">
+                        <button class="Basket__enter-button-buy button" type="button">
+                            Buy all
+                        </button>
+                        <button class="Basket__enter-button-delete button" type="button">
+                            Delete all
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    
+    <script src="./java.js"></script>
+</body>
+</html>

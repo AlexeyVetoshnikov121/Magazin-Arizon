@@ -1,0 +1,350 @@
+/* Стили для каждой темы */
+.theme-black {
+    background-color: var(--color-dark);
+}
+
+.theme-black .section__store {
+    background: url("../images/background-banner.jpg") no-repeat center/cover;
+}
+.theme-black button {
+    @include hover {
+        background-color: var(--color-dark-alternate);
+        color: var(--color-light);
+        border-width: 1px;
+    }
+}
+.theme-black .form__button {
+    @include hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+}
+.theme-black .store__button {
+    @include hover {
+        background-color: transparent;
+        color: var(--color-dark);
+        border-width: 2px;
+    }
+}
+
+
+.theme-black .header,
+.theme-black footer,
+.theme-black dialog {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.theme-green .section__store {
+    background: url("../images/i.webp") center/cover no-repeat;
+}
+.theme-green .store__sub-title {
+    color: var(--color-light);
+}
+
+.theme-green  {
+    background-color: #A4C639;
+}
+
+.theme-green select {
+    option {
+        background-color: #006B3C;
+    }
+}
+.theme-green .header,
+.theme-green footer,
+.theme-green dialog
+ {
+    background-color: #006B3C;
+}
+
+.theme-green .footer__title,
+.theme-green .footer__item,
+.theme-green .footer__sub-title,
+.theme-green .mobileFavourites__title {
+    color: var(--color-light);
+}
+
+.theme-green .cart-object,
+.theme-green .mobileCart {
+    background-color: #6C7C59;
+    border-color: var(--color-dark)
+}
+.theme-green .mobileCart__select {
+    border-color: var(--color-dark);
+}
+.theme-green .mobileCart__open-window {
+    background-color: transparent;
+}
+.theme-green .mobileCart__sub-title {
+    color: var(--color-light);
+}
+.theme-green .mobileCorsin {
+    border-color: var(--color-dark);
+    border-width: 2px;
+}
+.theme-green button {
+
+    @include hover {
+        background-color: #A4C639;
+        color: var(--color-dark);
+        border-color: var(--color-dark);
+    }
+}
+.theme-green .absolute__button,
+.theme-green .absolute__buttonFave {
+    @include hover {
+        background-color: transparent;
+    }
+}
+.theme-green .header__corsin-button,
+.theme-green .header__burger-button {
+    @include hover {
+        background-color: transparent;
+    }
+}
+.theme-green .location {
+    background-color: #009F6B;
+    .location__sub-title {
+        color: var(--color-light);      
+    }
+}
+.theme-green .feature__block {
+    background-color: #8A9A5B;
+    border-color: var(--color-dark);
+
+    .feature__block-sub-title {
+        color: var(--color-light);
+    }
+}
+.mobileReviews {
+    color: var(--color-light);
+}
+.theme-green .mobileReviews__area {
+    background-color: #006B3C;
+
+    &::placeholder {
+        color: var(--color-light);
+    }
+}
+.theme-green .location__star {
+    background: linear-gradient(90deg, #01411C, #88b04b);
+
+    &-title {
+        background-image: linear-gradient(90deg, #BDDA57, #30BA8F);
+    }
+}
+.theme-green .form__block {
+    background-color: #4C9141;
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
+.theme-green .form__title {
+    color: var(--color-light);
+}
+.theme-green .form__input {
+    background-color: #A4C639;
+    border-color: var(--color-dark);
+    border-width: 1px;
+}
+
+.theme-blue {
+    background-color: #333399;
+}
+.theme-blue .mobileReviews__area {
+    background-color: #00004d;
+}
+
+.theme-blue .header,
+.theme-blue footer,
+.theme-blue dialog {
+    color: var(--color-light);
+    background-color: #001D52;
+}
+.theme-blue .cart-object {
+    background-color: #001D52;
+}
+.theme-blue .mobileCorsin {
+    border-color: var(--color-dark);
+    border-width: 2px;
+}
+.theme-blue .absolute__button,
+.theme-blue .absolute__buttonFave {
+    @include hover {
+        background-color: transparent;
+    }
+}
+.theme-blue button {
+    @include hover {
+        background-color: #333399;
+        color: var(--color-light);
+        border-color: var(--color-dark);
+    } 
+}
+.theme-blue select {
+    option {
+        background-color: #001D52;
+    }
+}
+.theme-blue .mobileCart__open-window {
+    background-color: transparent;
+}
+.theme-blue .header__corsin-button,
+.theme-blue .header__burger-button {
+    @include hover {
+        background-color: transparent;
+    }
+
+}
+.theme-blue .location {
+    background-color: #2E5894;
+}
+.theme-blue .location__star {
+    background: linear-gradient(90deg, #333399, #001D52);
+
+    &-title {
+        background-image: linear-gradient(90deg, #269DCE, #BEDBED);
+    }
+}
+.theme-blue .location__sub-title {
+    color: var(--color-light);
+    opacity: 0.95;
+}
+.theme-blue .feature__block {
+    background-color: #0b091c;
+    border-color: var(--color-dark);
+}
+.theme-blue .section__store {
+    background: url("../images/planet.jpg") center/cover no-repeat;
+}
+.theme-blue .form__block {
+    background-color: #003262;
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
+.theme-blue .form__title,
+.theme-blue .form__sub-title {
+    color: var(--color-light);
+}
+.theme-blue .form__input {
+    background-color: #012169;
+    color: var(--color-light);
+    border: 1px solid var(--color-dark);
+
+    &::placeholder {
+        color: var(--color-light);
+    }
+}
+
+
+
+.theme-white {
+    background-color: #BEDBED;
+}
+.theme-white .mobileReviews__area {
+    background-color: #fadadd;
+    color: var(--color-dark);  
+}
+
+.theme-white .header,
+.theme-white footer,
+.theme-white dialog {
+    background-color: #9090C0;
+}
+.theme-white .cart-object {
+    background-color: #9090C0;
+}
+.theme-white .mobileCorsin {
+    border-color: var(--color-dark);
+    border-width: 2px;
+}
+.theme-white .absolute__button,
+.theme-white .absolute__buttonFave {
+    @include hover {
+        background-color: transparent;
+    }
+}
+.theme-white button {
+
+    @include hover {
+        background-color: #BEDBED;
+        color: var(--color-dark);
+        border-color: var(--color-dark);
+    }
+}
+.theme-white select {
+    option {
+        background-color: #9090C0;
+    }
+}
+.theme-white .mobileCart__open-window {
+    background-color: transparent;
+}
+.theme-white .header__corsin-button,
+.theme-white .header__burger-button {
+    @include hover {
+        background-color: transparent;
+    }
+}
+.theme-white .section__store {
+    background: url("../images/pole.jpg") center/cover no-repeat;
+}
+.theme-white .store__sub-title {
+    color: var(--color-light);
+}
+.theme-white .location {
+    background-color: #d5bdaf;
+}
+.theme-white .location__sub-title {
+    color: var(--color-light);
+}
+.theme-white .location__star {
+    background: linear-gradient(90deg, #a78a7f, #5e503f);
+
+    &-title {
+        background-image: linear-gradient(90deg, #ffffff);
+    }
+}
+.theme-white .feature__block {
+    background-color: #ccc5b9;
+    border-color: var(--color-dark);
+}
+
+.theme-white .footer__title,
+.theme-white .footer__item,
+.theme-white .footer__sub-title,
+.theme-white .mobileFavourites__title,
+.theme-white .mobileCart__sub-title {
+    color: var(--color-light);
+}
+
+.theme-white .form__block {
+    background-color: #432534;
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
+.theme-white .form__title,
+.theme-white .form__sub-title {
+    color: var(--color-light);
+}
+.theme-white .form__input {
+    background-color: #f2f2f2;
+    color: var(--color-dark);
+    border: 1px solid var(--color-dark);
+
+    &::placeholder {
+        color: var(--color-dark);
+    }
+}
+
+.theme-green .mobileOverlay__button,
+.theme-blue .mobileOverlay__button,
+.theme-white .mobileOverlay__button,
+.theme-green .mobileOverlay__button-new,
+.theme-blue .mobileOverlay__button-new,
+.theme-white .mobileOverlay__button-new {
+
+    @include hover {
+        background-color: transparent;
+    }
+}

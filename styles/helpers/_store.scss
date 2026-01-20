@@ -1,0 +1,62 @@
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    @include desktop {
+        min-height: 634px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__title {
+        @include flued-text(46, 96);
+        padding-bottom: 20px;
+
+        time {
+            background-image: linear-gradient(90deg, var(--color-yellow), var(--color-purple));
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        @include desktop {
+            padding-bottom: 0;
+        }
+    }
+
+    &__sub-title {
+        @include flued-text(14, 18);
+        max-width: 560px;
+        padding-bottom: 24px;
+
+        background-image: linear-gradient(90deg, var(--color-purple), var(--color-yellow));
+        color: transparent;
+        -webkit-background-clip: text;
+
+        @include desktop {
+            padding-bottom: 16px;
+        }
+        
+    }
+
+    &__button {
+        height: 46px;
+        width: 126px;
+
+        @include hover {
+            background-color: transparent;
+        }
+
+        @include tablet {
+            width: 106px;
+            height: 36px;
+        }
+        
+    }
+}

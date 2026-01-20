@@ -1,0 +1,36 @@
+.absolute__button,
+.absolute__buttonFave {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    @include square(60px);
+    @include reset-button;
+    transition-duration: var(--transition-duration);
+
+    svg {
+        fill: red;
+    }
+
+    @include hover {
+        svg {
+            fill: var(--color-purple);
+        }
+    }
+}
+
+.absolute__buttonFave {
+    @include desktop {
+        @include square(40px);
+        margin-right: 30px;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @include mobile {
+        margin-right: 20px;
+    }
+}

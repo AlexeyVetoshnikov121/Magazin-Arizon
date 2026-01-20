@@ -1,0 +1,14 @@
+.star {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 40%;
+        width: clamp(7px, 0.52vw, 10px);
+        height: clamp(7px, 0.52vw, 10px);
+        background: url("C:\\Users\\alexv\\Downloads\\Web-Site Gubin\\icons\\star.svg") no-repeat center/cover;
+    }
+   
+}

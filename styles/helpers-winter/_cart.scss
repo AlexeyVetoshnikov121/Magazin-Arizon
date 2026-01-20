@@ -1,0 +1,44 @@
+.cart {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-bottom: 80px;
+    padding-top: 60px;
+
+    @include desktop {
+        padding-bottom: 60px;
+    }
+
+    @include mobile {
+        row-gap: 30px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(2, 305px);
+
+            row-gap: 20px;
+        }
+
+        @include mobile {
+            grid-template-columns: 250px;
+        }
+
+    }
+
+    &__title {
+        @include flued-text(32, 44);
+        padding-top: 160px;
+
+        @include desktop {
+            align-self: center;
+            padding-top: 100px;
+        }
+    }
+}

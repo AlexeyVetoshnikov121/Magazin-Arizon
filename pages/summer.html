@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arizon</title>
+
+     <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+    <header class="section__header">
+        <div class="header section">
+             <div class="block-u">
+                <a href="" class="header__image-link">
+                    <img src="../icons/amogus.svg" alt="" class="header__icon">
+                </a>
+                <h1 class="header__title-ru">Average rate:</h1>
+                <h1 class="header__title-sr-znach">0</h1>
+            </div>
+            <ul class="header__list hidden-mobile">
+                <li class="header__list-item">
+                    <a href="../index.html" class="header__list-title">Primary</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./winter.html" class="header__list-title">Winter</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./spring.html" class="header__list-title">Spring</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="" class="header__list-title star">Summer</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="./autumn.html" class="header__list-title">Autumn</a>
+                </li>
+            </ul>
+            <nav class="header__block">
+                 <div class="block-l">
+                    <label for="theme-selector" class="header__label">
+                        <span class="header__arrow"></span>
+                        <select name="theme-filter" id="theme-selector" class="header__theme">
+                            <option value="default" selected disabled>Default</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="white">White</option>
+                        </select>
+                    </label>
+                    <label for="filter" class="header__label">
+                        <span class="header__arrow"></span>
+                        <select name="filter" id="filter" class="header__select" onchange="sortBlocks(this)"> 
+                            <option value="filter" disabled selected>Filter</option>
+                            <option value="A-Z">A-Z</option>
+                            <option value="Z-A">Z-A</option>
+                            <option value="By price">By price</option>
+                            <option value="Reviews">Reviews</option>
+                        </select>
+                    </label>
+                </div>
+                <button class="header__corsin-button" type="button" onclick="MobileCorsin.showModal()">
+                    <img src="../icons/cart.svg" alt="" class="header__corsin-image">
+                    <span class="header__corsin-span">0</span>
+                </button>
+                <button class="header__burger-button burger-button visible-mobile" type="button" onclick="MobileOverlay.showModal()">
+                    <span class="burger-button__span"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section__main section">
+        <div class="cart">
+            <h1 class="visually-hidden">Cart Block</h1>
+            <h1 class="cart__title">Summer clothes</h1>
+            <nav class="cart__block teen">
+                <h2 class="visually-hidden">Cart Object</h2>
+                <div class="cart-object" data-name="Black VOLCOM T-shirt" data-price="2590" data-review="3.9" data-id="9">
+                   
+                    <img src="../images/Summer/1.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Black VOLCOM T-shirt</h3>
+                        <h3 class="cart-object__price">2590 rub.</h3>
+                        <h3 class="cart-object__rating">3.9</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                    <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="Brown VOLCOM T-shirt" data-price="2590" data-review="4.0" data-id="10">
+                    
+                    <img src="../images/Summer/2.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Brown VOLCOM T-shirt</h3>
+                        <h3 class="cart-object__price">2590 rub.</h3>
+                        <h3 class="cart-object__rating">4.0</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                    <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="Pink VOLCOM T-shirt" data-price="2950" data-review="3.7" data-id="11">
+                     
+                    <img src="../images/Summer/3.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Pink VOLCOME sweatshirt</h3>
+                        <h3 class="cart-object__price">2950 rub.</h3>
+                        <h3 class="cart-object__rating">3.7</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                    <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="Workwear VOLCOM T-shirt" data-price="2990" data-review="2.9" data-id="12">
+                     
+                    <img src="../images/Summer/4.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Workwear VOLCOM t-shirt</h3>
+                        <h3 class="cart-object__price">2990 rub.</h3>
+                        <h3 class="cart-object__rating">2.9</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                    <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            <nav class="cart__block teen">
+                <h2 class="visually-hidden">Cart Object</h2>
+                <div class="cart-object" data-name="Dark Panama VOLCOM" data-price="1990" data-review="4.5" data-id="13">
+                    <img src="../images/Summer/5.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Panama dark VOLCOM</h3>
+                        <h3 class="cart-object__price">1990 rub.</h3>
+                        <h3 class="cart-object__rating">4.5</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                     <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="Beige Panama VOLCOM" data-price="1990" data-review="4.2" data-id="14">
+                   
+                    <img src="../images/Summer/6.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Light beige panama VOLCOM</h3>
+                        <h3 class="cart-object__price">1990 rub.</h3>
+                        <h3 class="cart-object__rating">4.2</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                     <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="White Panama VOLCOM" data-price="1990" data-review="3.8" data-id="15">
+                     
+                    <img src="../images/Summer/7.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">White panama VOLCOM</h3>
+                        <h3 class="cart-object__price">1990 rub.</h3>
+                        <h3 class="cart-object__rating">3.8</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                     <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+                <div class="cart-object" data-name="Pink Panama VOLCOM" data-price="1990" data-review="4.7" data-id="16">
+                     
+                    <img src="../images/Summer/8.png" alt="" class="cart-object-op__image">
+                    <nav class="cart-object__block-titles">
+                        <h3 class="cart-object__title">Pink panama VOLCOM</h3>
+                        <h3 class="cart-object__price">1990 rub.</h3>
+                        <h3 class="cart-object__rating">4.7</h3>
+                    </nav>
+                    <button class="cart-object__button button" type="button" onclick="MobileCart.showModal()">
+                        Read more
+                    </button>
+                     <div class="cart-object__sub-title visually-hidden">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="section__footer section">
+        <div class="footer">
+            <h1 class="visually-hidden">Footer Arizona</h1>
+            <a href="" class="footer__image-link">
+                <img src="../icons/amogus.svg" alt="" class="header__icon">
+            </a>
+            <nav class="footer__titles">
+                <a href="../index.html" class="footer__title">primary</a>
+                <a href="./winter.html" class="footer__title">winter</a>
+                <a href="./spring.html" class="footer__title">spring</a>
+                <a href="" class="footer__title">summer</a>
+                <a href="./autumn.html" class="footer__title">autumn</a>
+            </nav>
+            <ul class="footer__contacts">
+                <li class="footer__item">
+                    <a href="mailto:alexveto2728@gmail.com" class="footer__email">alexveto2728@gmail.com</a>
+                </li>
+                <li class="footer__item">
+                    <a href="tel:+79822084258" class="footer__tel">+7 982 208 4258</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__sub-title">
+                <p>
+                    Created by Alexey Vetoshnikov :-)
+                </p>
+        </div>
+    </footer>
+
+    <dialog class="mobileOverlay visible-mobile" id="MobileOverlay">
+        <form class="mobileOverlay__form" method="dialog">
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <ul class="header__list">
+            <li class="header__list-item">
+                <a href="../index.html" class="header__list-title">Primary</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./winter.html" class="header__list-title">Winter</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./spring.html" class="header__list-title">Spring</a>
+            </li>
+            <li class="header__list-item">
+                <a href="" class="header__list-title star">Summer</a>
+            </li>
+            <li class="header__list-item">
+                <a href="./autumn.html" class="header__list-title">Autumn</a>
+            </li>
+        </ul>
+    </dialog>
+
+    <dialog class="mobileCorsin" id="MobileCorsin">
+        <form class="mobileOverlay__form" method="dialog">
+            <h1 class="mobileOverlay__title">Your shopping cart is empty</h1>
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <div class="mobileCorsin__block-two">
+            <div class="mobileCorsin__block">
+                <dialog class="Basket" id="BasketCart">
+                <nav class="Basket__block">
+                    <img src="../images/Winter/jackets/1.png" alt="" class="Basket__image"> <!--Тут будет лежать src по JS пока такая картинка-->
+                    <div class="Basket__titles">
+                        <div class="Basket__top">
+                            <div class="Basket__top-item">
+                                <h1 class="Basket__title">Название</h1>
+                                <nav class="Basket__mini-block-titles">
+                                    <h2 class="Basket__price">4900 rub.</h2>
+                                    <h3 class="Basket__rating star">4.8</h3>
+                                </nav>
+                                <h1 class="Basket__size">Size: XXL</h1>
+                            </div> 
+                            <div class="Basket__top-item">
+                                <details class="mobileCart__details">
+                                <summary class="mobileCart__summary">
+                                    <h2 class="mobileCart__summary-title">Read more</h2>
+                                    <span class="mobileCart__open-window"></span>
+                                </summary>
+                                <div class="mobileCart__sub-title">
+                                    <p>
+                                        This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                                    </p>
+                                </div>
+                                </details> 
+                            </div> 
+                        </div>
+                        <div class="Basket__bottom">
+                            <button class="Basket__button-buy button" type="button">
+                                Buy
+                            </button>
+                            <form class="Basket__form-button">
+                                <button class="Basket__button-delete button">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                </dialog>
+                <div class="Basket__enter">
+                    <h1 class="Basket__enter-title">Number of products: 0</h1>
+                    <h1 class="Basket__enter-price">Total price: 0</h1>
+                    <div class="Basket__enter-block-button">
+                        <button class="Basket__enter-button-buy button" type="button">
+                            Buy all
+                        </button>
+                        <button class="Basket__enter-button-delete button" type="button">
+                            Delete all
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="mobileCart" id="MobileCart">
+        <form class="mobileOverlay__form" method="dialog">
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <nav class="mobileCart__block">
+            <button class="absolute__button" type="button">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="30px" height="30px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="16" height="16" id="icon-bound" fill="none" />
+                    <path d="M11.75,1C10.126,1,8.716,1.911,8,3.249C7.284,1.911,5.874,1,4.25,1C1.903,1,0,2.903,0,5.25C0,11,8,15,8,15s8-4,8-9.75 C16,2.903,14.097,1,11.75,1z" />
+                </svg>
+            </button>
+            <img src="" alt="" class="mobileCart__image">
+            <div class="mobileCart__titles">
+                <h1 class="mobileCart__title">Name Jacket</h1>
+                <nav class="mobileCart__titles-two">
+                    <h2 class="mobileCart__price">4490 rub.</h2>
+                    <h2 class="mobileCart__rating">4.8</h2>
+                    <button class="mobileCart__otziv" type="button" onclick="MobileReviews.showModal()">
+                        rate the product
+                    </button>
+                </nav>
+                <details class="mobileCart__details">
+                    <summary class="mobileCart__summary">
+                        <h2 class="mobileCart__summary-title">Read more</h2>
+                        <span class="mobileCart__open-window"></span>
+                    </summary>
+                    <div class="mobileCart__sub-title">
+                        <p>
+                            This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                        </p>
+                    </div>
+                </details>
+                <label for="size" class="mobileCart__label">
+                    Size:
+                    <span class="mobileCart__arrow"></span>
+                    <select class="mobileCart__select" id="size" 
+                    name="size" required>
+                        <option value="Size: S">S</option>
+                        <option value="Size: M">M</option>
+                        <option value="Size: L">L</option>
+                        <option value="Size: XL">XL</option>
+                        <option value="Size: XXL">XXL</option>
+                    </select>
+                </label>
+                <button class="mobileCart__button button" type="button">
+                    add to cart
+                </button>
+            </div>
+        </nav>
+        
+    </dialog>   
+
+    <dialog class="mobileReviews" id="MobileReviews">
+         <form class="mobileOverlay__form" method="dialog">
+            <button class="mobileOverlay__button" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+        </form>
+        <div class="mobileReviews__body">
+            <div class="block-j">
+                <span class="mobileReviews__span">0</span>
+                <h1 class="mobileReviews__title">Estimation</h1>
+            </div>
+            
+            <div class="block-g">
+                <span class="min-label">0.1</span>
+                <label for="range" class="visually-hidden">Range</label>
+                <input type="range" class="mobileReviews__input" 
+                id="range" name="range" required min="0.1" max="5.0" step="0.1">
+                <span class="max-label">5.0</span>
+            </div>
+
+            <label for="text" class="visually-hidden">Someting Text</label>
+            <textarea type="text" class="mobileReviews__area" 
+            id="area" name="area" placeholder="Enter something..."></textarea>
+            <form class="mobileOverlay__form" method="dialog">
+                <button class="mobileReviews__submit-button button" type="submit" onclick="SendReviews()">
+                    to send review
+                </button>
+            </form>
+        </div>
+    </dialog>
+
+    <button class="absolute__buttonFave" type="button" onclick="MobileFavourites.showModal()">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg width="60px" height="60px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="16" height="16" id="icon-bound" fill="none" />
+            <path d="M11.75,1C10.126,1,8.716,1.911,8,3.249C7.284,1.911,5.874,1,4.25,1C1.903,1,0,2.903,0,5.25C0,11,8,15,8,15s8-4,8-9.75 C16,2.903,14.097,1,11.75,1z" />
+        </svg>
+        <h1 class="absolute__title"></h1>
+    </button>
+
+    <dialog class="mobileFavourites" id="MobileFavourites">
+         <form class="mobileOverlay__form" method="dialog">
+            <button class="mobileOverlay__button-new" type="submit">
+                <span class="mobileOverlay__span"></span>
+            </button>
+            <h1 class="mobileFavourites__title">Favourites</h1>
+        </form>
+         <div class="mobileCorsin__block-two">
+            <div class="mobileCorsin__block">
+                <dialog class="Basket" id="BasketCart">
+                    <nav class="Basket__block">
+                    <img src="" alt="" class="Basket__image"> 
+                    <div class="Basket__titles">
+                        <div class="Basket__top">
+                            <div class="Basket__top-item">
+                                <h1 class="Basket__title">Название</h1>
+                                <nav class="Basket__mini-block-titles">
+                                    <h2 class="Basket__price">4900 rub.</h2>
+                                    <h3 class="Basket__rating star">4.8</h3>
+                                    <h1 class="Basket__size">Size: XXL</h1>
+                                </nav>
+                            </div> 
+                            <div class="Basket__top-item">
+                                <details class="mobileCart__details">
+                                <summary class="mobileCart__summary">
+                                    <h2 class="mobileCart__summary-title">Read more</h2>
+                                    <span class="mobileCart__open-window"></span>
+                                </summary>
+                                <div class="mobileCart__sub-title">
+                                    <p>
+                                        This stylish men's winter jacket is a combination of elegance and practicality. It is made in classic black color, which makes it versatile for any wardrobe. The model is an elongated parka with a voluminous hood trimmed with fluffy faux fur, which not only adds sophistication, but also perfectly protects from the cold.
+                                    </p>
+                                </div>
+                                </details> 
+                            </div> 
+                        </div>
+                        <div class="Basket__bottom">
+                            <button class="Basket__button-add-cart button" type="button">
+                                add to cart
+                            </button>
+                            <form class="Basket__form-button">
+                                <button class="Basket__button-delete-fave button" type="button">
+                                    Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    </nav>
+                </dialog>
+                
+            </div>
+        </div>
+
+    </dialog>
+    
+    <script src="../java.js"></script>
+</body>
+</html>

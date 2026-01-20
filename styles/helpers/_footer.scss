@@ -1,0 +1,70 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1100px;
+    width: 100%;
+    column-gap: 20px;
+
+    @include mobile {
+        flex-wrap: wrap;
+
+        row-gap: 40px;
+    }
+
+    &__image-link {
+        @include hover {
+            opacity: 0.5;
+        }
+
+        @include mobile {
+            order: 1
+        }
+    }
+
+    &__titles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+        @include mobile {
+            order: 3;
+        }
+    }
+
+    &__title {
+        @include flued-text(14, 16);
+        color: var(--color-gray);
+
+        @include hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 37px;
+        height: 127px;
+
+        @include mobile {
+            order: 2;
+        }
+    }
+
+    &__item {
+
+        color: var(--color-gray);
+        transition-duration: var(--transition-duration);
+
+        @include hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__sub-title {
+        padding-top: 80px;
+        color: var(--color-gray);
+    }
+
+}

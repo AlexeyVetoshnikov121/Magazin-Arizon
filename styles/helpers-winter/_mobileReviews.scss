@@ -1,0 +1,83 @@
+.mobileReviews {
+    width: 300px;
+    height: 300px;
+    border: 0;
+    padding: 0;
+    padding: 20px;
+    border: 1px solid var(--color-light);
+
+    .mobileOverlay__button {
+        @include square(20px);
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        height: 92%;
+        width: 100%;
+    }   
+
+    &__title {
+        @include flued-text(18, 22);
+        align-self: center;
+    }
+
+    .block-j {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .block-g {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        column-gap: 10px;
+    }
+
+    &__span {
+        @include flued-text(14, 18);
+        width: 50px;
+    }
+
+    &__input {
+        margin-bottom: 10px;
+        background-color: var(--color-purple);
+        border-radius: 5px;
+        height: 20px;
+        width: 100%;
+        appearance: none;
+        cursor: pointer;
+
+        &::-webkit-slider-thumb {
+            @include square(15px);
+            border-radius: 50%;
+            border: 2px solid black;
+            background-color: var(--color-yellow);
+            appearance: none;
+        }
+    }
+
+    &__area {
+        resize: none;
+        height: 70%;
+        padding: 8px;
+        background-color: var(--color-dark);
+        border: var(--border-button);
+        color: var(--color-light);
+    }
+
+    &__form {
+        width: 100%;
+    }
+    &__submit-button {
+        width: 100%;
+        margin-top: 10px;
+        height: 30px;
+        border: var(--border-button);
+    }
+
+}
+
+

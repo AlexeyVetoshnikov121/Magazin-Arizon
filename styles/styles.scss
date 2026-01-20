@@ -1,0 +1,39 @@
+@import 
+    'block/_fonts.scss',
+    'block/_media.scss',
+    'block/_mixins.scss',
+    'block/_normalize.scss',
+    'block/_utils.scss',
+    'block/_variables.scss',
+    'block/_globals.scss';
+
+//index.html
+
+@import 
+    'helpers/_theme.scss',
+    'helpers/_section.scss',
+    'helpers/_star.scss',
+    'helpers/_header.scss',
+    'helpers/_button.scss',
+    'helpers/_burger-button.scss',
+    'helpers/_mobileOverlay.scss',
+    'helpers/_store.scss',
+    'helpers/_feature.scss',
+    'helpers/_location.scss',
+    'helpers/_form.scss',
+    'helpers/_footer.scss',
+    'helpers/_slider-style.scss',
+    'helpers/_absoluteButton.scss';
+    
+
+//winter/spring/autumn/summer
+
+@import 
+    'helpers-winter/_cart.scss',
+    'helpers-winter/_cart-object.scss',
+    'helpers-winter/_mobileCart.scss',
+    'helpers-winter/_mobileCorsin.scss',
+    'helpers-winter/_Basket.scss',
+    'helpers-winter/_mobileReviews.scss',
+    'helpers-winter/_mobileFavourites.scss';
+

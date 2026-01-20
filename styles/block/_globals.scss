@@ -1,0 +1,60 @@
+body {
+    @include flued-text(14, 16);
+    font-family: var(--font-family-base);
+    color: var(--color-light);
+    line-height: 1;
+    transition-duration: var(--transition-duration);
+}
+
+
+@view-transition {
+  navigation: auto;
+
+  ::view-transition-old(root) {
+    animation: 2s ease-in-out both slideOut;
+  }
+
+  ::view-transition-new(root) {
+    animation: 2s ease-in-out both zoomIn;
+   }
+}
+
+button,
+select,
+input,
+svg,
+textarea,
+a,
+span {
+    transition-duration: var(--transition-duration);
+    outline: none;
+}
+
+
+::before,
+::after {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    @include reset-link;
+}
+
+p {
+    font-family: 'Agrandir-Regular', sans-serif;
+    line-height: 1.4;
+}
+
+input {
+    font-family: 'Quicksand-Bold', sans-serif;
+}
+
+h2 {
+    @include flued-text(32, 44);
+    line-height: 1.4;
+}
+
+h3 {
+    @include flued-text(24, 32);
+    line-height: 1.2;
+}

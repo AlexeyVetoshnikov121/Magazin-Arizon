@@ -1,0 +1,29 @@
+@mixin flued-text($min, $max) {
+    font-size: clamp(#{$min}px, calc(#{$max}px / 1920px * 100vw), #{$max}px);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reset-link {
+    color: inherit;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin reset-button {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}

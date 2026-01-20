@@ -1,0 +1,28 @@
+.section {
+    padding-inline: var(--section-padding-inline);
+
+    &__store {
+        background: none;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        background-color: var(--color-dark-alternate);
+
+        @include tablet {
+            padding-top: 60px;
+        }
+    }
+
+    @include tablet  {
+        --section-padding-inline: 50px;
+    }
+
+    @include mobile {
+        --section-padding-inline: 30px;
+    }
+}

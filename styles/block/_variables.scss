@@ -1,0 +1,20 @@
+:root {
+    --color-dark: #000000;
+    --color-light: #FFFFFF;
+    --color-dark-alternate: #0F0F0F;
+    --color-aqua: #A1AEBF;
+    --color-yellow: #FFB219;
+    --color-gray: #808080;
+    --color-purple: #8B7BCF;
+
+    --font-family-base: 'Agrandir-TextBold', sans-serif;
+
+    --border-input: 2px solid #A1AEBF;
+    --border-radius-input: 30px;
+    --border-button: 1px solid var(--color-yellow);
+    --border-raduis-block: 5px;
+
+    --section-padding-inline: 70px;
+    
+    --transition-duration: 0.4s;
+}

@@ -1,0 +1,64 @@
+.mobileCorsin {
+    position: fixed;
+    width: 1000px;
+    height: 700px;
+    background-color: var(--color-dark-alternate);
+    border: var(--border-input);
+    border-radius: var(--border-raduis-block);
+    border-width: 1px;
+    color: var(--color-light);
+    overflow-y: auto;
+    padding: 0;
+
+    @include tablet {
+        width: 800px;
+        height: 600px;
+    }
+
+
+    .mobileOverlay__form {
+        height: 110px; 
+        border-bottom: 1px solid var(--color-light);
+        padding-bottom: 20px;
+
+        @include tablet {
+            height: 70px;
+        }
+    }
+
+    .mobileOverlay__button {
+        @include square(25px);
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .mobileOverlay__title {
+        @include tablet {
+            translate: 0 -15px;
+        }
+        @include mobile {
+            font-size: 25px;
+            translate: 0 -10px;
+        }
+
+    }
+
+    &__block-two {
+        height: 82%;
+
+        @include mobile {
+            height: 100%;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: end;
+        height: 100%;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: start;
+        }
+    }
+}

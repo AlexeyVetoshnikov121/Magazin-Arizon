@@ -1,0 +1,55 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-block: 80px;
+
+    @include tablet {
+        padding-block: 60px;
+    }
+
+    &__title {
+        align-self: center;
+    }
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: start;
+        gap: 24px;
+
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: normal;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 24px;
+        border: var(--border-input);
+        border-width: 1px;
+        border-radius: var(--border-raduis-block);
+        background-color: var(--color-dark-alternate);
+
+        &-title {
+            padding-bottom: 16px;
+        }
+
+        &-sub-title {
+            color: var(--color-gray);
+        }
+    }
+
+    &__image {
+        @include square(40px);
+        margin-bottom: 24px;
+    }
+}
